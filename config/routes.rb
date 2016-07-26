@@ -1,14 +1,24 @@
 Rails.application.routes.draw do
   devise_for :users
 
+# DOG ROUTES
+  root to: "dogs#index", as: :home
+  get 'dogs/index' => 'dogs#index'
+  get 'dogs/new' => 'dogs#new', as: :new_dog
+  post 'dogs/create' => 'dogs#create'
+  get 'dogs/:id' => 'dogs#show', as: :dog
+  get 'dogs/:id/edit' => 'dogs#edit', as: :edit_dog
+
+  # patch 'dogs/:id/update'
+
+  # delete 'dogs/:id/destroy'
+
+
 # LOCATION ROUTES
   get 'locations/index'
-
   get 'locations/new'
-
   post 'locations/create'
-
-  get '/locations/show'
+  get '/locations/:id' => 'locations#show', as: :location
 
   # get 'locations/:id/edit'
 
@@ -16,37 +26,15 @@ Rails.application.routes.draw do
 
   # delete 'locations/:id/destroy'
 
-# DOG ROUTES
-  root to: "dogs#index"
-
-  get 'dogs/index' => 'dogs#index'
-
-  get 'dogs/new'
-
-  post 'dogs/create'
-
-  get 'dogs/:id' => 'dogs#show', as: :dog
-
-  # get 'dogs/:id/edit'
-
-  # patch 'dogs/:id/update'
-
-  # delete 'dogs/:id/destroy'
 
 
 # USER ROUTES
   get 'users/index'
-
   get 'users/new'
-
   post 'users/create'
-
   get 'users/show'
-
   get 'users/edit'
-
   patch 'users/update'
-
   delete 'users/destroy'
 
   end

@@ -6,8 +6,7 @@ class CreateDogs < ActiveRecord::Migration
       t.string :sex
       t.boolean :vaccinated
       t.string :image
-
-
+      t.integer :location_id
       t.timestamps null: false
     end
   end

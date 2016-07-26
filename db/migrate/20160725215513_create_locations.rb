@@ -4,8 +4,6 @@ class CreateLocations < ActiveRecord::Migration
       t.string :city
       t.integer :tag_id
       t.string :description
-      t.integer :dog_id
-      t.string :image
       t.timestamps null: false
     end
   end

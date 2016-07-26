@@ -1,22 +1,35 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Dog.delete_all
+Location.delete_all
 
-d1 = Dog.create(breed: "Maltese", age: "3 months", sex: "Male",
- vaccinated: "Yes", image: "http://7-themes.com/data_images/out/73/7022533-brown-maltese-puppy.jpg")
+l1 = Location.create(city: "Los Angeles")
 
-Location.create(city: "Los Angeles", description: "Hello, my name is Pika, I am very friendly and likes to play a lot", image: "https://s-media-cache-ak0.pinimg.com/236x/91/f6/ca/91f6ca56c65507414da9e8a615b327b9.jpg", tag_id: d1.id)
+Dog.create(breed: "Maltese", age: "3 months", sex: "Male",
+ vaccinated: true, image: "http://www.dogbreedplus.com/dog_breeds/images/maltese.jpg", location_id: l1.id)
 
-Location.create(city: "Los Angeles", description: "Hello, my name
- is Penny and i would love to be your pet.", image: "https://adsark.com/adpics/57849b914c9f5adcb5b8163af.jpg", tag_id: d1.id)
+Dog.create(breed: "Corgi", age: "6 months", sex: "Male", vaccinated: true, image: "https://s-media-cache-ak0.pinimg.com/236x/39/51/66/395166785942e7f4098fb27b5dc8b3d2.jpg", location_id: l1.id)
 
-d2 = Dog.create(breed: "Corgi", age: "6 months", sex: "Female", vaccinated: "Yes", image: "https://aos.iacpublishinglabs.com/question/ed3d656e3a8c9b5fe63845922ed5d64d/aq/700px-394px/can-corgi-puppies_f3dd708afd5cb9c9_9t7k5pAYTCGhM0AWBjDP4A.jpg?domain=cx.aos.ask.com")
 
-Location.create(city: "Glendale", description: "Hello I am a corgi dog and I would like to have a home", image: "http://www.tehcute.com/pics/201109/corgi-puppy-on-a-couch.jpg", tag_id: d2.id)
+l2 = Location.create(city: "Glendale")
+
+Dog.create(breed: "Poodle", age: "2 months", sex: "Female", vaccinated: true, image: "http://www.tcupsweethome.com/image/mypic_article/images%20(3).jpg", location_id: l2.id)
+
+Dog.create(breed: "Chihuahua", age: "2 months", sex: "Male", vaccinated: true, image: "https://i.ytimg.com/vi/q2SNbzOgw10/hqdefault.jpg", location_id: l2.id)
+
+
+l3 =Location.create(city: "Burbank")
+
+Dog.create(breed: "Maltese", age: "3 months", sex: "Male",
+ vaccinated: true, image: "https://s-media-cache-ak0.pinimg.com/236x/91/f6/ca/91f6ca56c65507414da9e8a615b327b9.jpg", location_id: l3.id)
+
+Dog.create(breed: "Pugs", age: "2 months", sex: "Male", vaccinated: true, image: "https://s3.graphiq.com/sites/default/files/465/media/images/t2/Pug_5374601.jpg", location_id: l3.id)
+
+l4 =Location.create(city: "North Hollywood")
+
+Dog.create(breed: "Shiz Tsu", age: "2 months", sex: "Female", vaccinated: true, image: "http://designerdogsonline.com/wp-content/uploads/2015/07/MalteseXShihTzu-puppy-on-the-driveway-300x275.jpg", location_id: l4.id)
+
+Dog.create(breed: "French Bulldog", age: "1 year", sex: "Male", vaccinated: true, image: "https://s.graphiq.com/sites/default/files/465/media/images/t2/French_Bulldog_5204897.jpg", location_id: l4.id)
+
+
 
 
 

@@ -1,7 +1,7 @@
 <div class="header">
   <div class="container">
+  <h1>Pup-Adopt</h1>
     <img src="http://logofury.com/wp-content/uploads/2002/320.jpg" width="">
-    <h1>Dog Adoption</h1>
     <p>"Your future pet is waiting for you"</p>
   </div>
 </div>
@@ -13,6 +13,9 @@
       <div class="card col-xs-4">
         <%= image_tag d.image %>
         <h2><%= d.breed %></h2>
+        <p><%= d.age %></p>
+        <p><%= d.sex %></p>
+
         <%= link_to "Adopt Me", dog_path(d.id) %>
       </div>
       <% end %>
@@ -24,12 +27,4 @@
 
 
 
-<!-- <h1>Dog Adoption</h1>
-<p>"Your future pet is waiting for you"</p>
 
-<img src="http://www.planwallpaper.com/static/images/3e9c5ad3af07e573b0e74bdb0a1dce3e_aL3rc7p.jpg" width="180">
-
-<% @dogs.each do |dog| %>
-    <% dog.breed %>
-
-<% end %> -->
