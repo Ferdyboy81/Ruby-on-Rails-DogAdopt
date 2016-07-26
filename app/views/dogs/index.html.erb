@@ -1,2 +1,35 @@
-<h1>Dogs#index</h1>
-<p>Find me in app/views/dogs/index.html.erb</p>
+<div class="header">
+  <div class="container">
+    <img src="http://logofury.com/wp-content/uploads/2002/320.jpg" width="">
+    <h1>Dog Adoption</h1>
+    <p>"Your future pet is waiting for you"</p>
+  </div>
+</div>
+
+<div class="dogs">
+  <div class="container">
+    <div class="cards row">
+      <% @dogs.each do |d| %>
+      <div class="card col-xs-4">
+        <%= image_tag d.image %>
+        <h2><%= d.breed %></h2>
+        <%= link_to "Adopt Me", dog_path(d.id) %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <h1>Dog Adoption</h1>
+<p>"Your future pet is waiting for you"</p>
+
+<img src="http://www.planwallpaper.com/static/images/3e9c5ad3af07e573b0e74bdb0a1dce3e_aL3rc7p.jpg" width="180">
+
+<% @dogs.each do |dog| %>
+    <% dog.breed %>
+
+<% end %> -->

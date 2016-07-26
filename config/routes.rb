@@ -6,15 +6,15 @@ Rails.application.routes.draw do
 
   get 'locations/new'
 
-  get 'locations/create'
+  post 'locations/create'
 
-  get 'locations/show'
+  get '/locations/show'
 
-  get 'locations/edit'
+  # get 'locations/:id/edit'
 
-  get 'locations/update'
+  # patch 'locations/:id/update'
 
-  get 'locations/destroy'
+  # delete 'locations/:id/destroy'
 
 # DOG ROUTES
   root to: "dogs#index"
@@ -23,15 +23,15 @@ Rails.application.routes.draw do
 
   get 'dogs/new'
 
-  get 'dogs/create'
+  post 'dogs/create'
 
-  get 'dogs/show'
+  get 'dogs/:id' => 'dogs#show', as: :dog
 
-  get 'dogs/edit'
+  # get 'dogs/:id/edit'
 
-  get 'dogs/update'
+  # patch 'dogs/:id/update'
 
-  get 'dogs/destroy'
+  # delete 'dogs/:id/destroy'
 
 
 # USER ROUTES
@@ -39,15 +39,17 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
-  get 'users/create'
+  post 'users/create'
 
   get 'users/show'
 
   get 'users/edit'
 
-  get 'users/update'
+  patch 'users/update'
 
-  get 'users/destroy'
+  delete 'users/destroy'
+
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -103,4 +105,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+

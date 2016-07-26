@@ -10,6 +10,8 @@ class DogsController < ApplicationController
   end
 
   def show
+    @dogs = Dog.find(params[:id])
+    @locations = @dogs.locations
   end
 
   def edit

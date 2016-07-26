@@ -1,2 +1,24 @@
-<h1>Dogs#show</h1>
-<p>Find me in app/views/dogs/show.html.erb</p>
+<div class="header">
+  <div class="container">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
+        <h1>Dogs for Adoption</h1>
+  </div>
+</div>
+
+<div class="dog"
+  <div class="container">
+  <h2> <%= @dogs.breed %> </h2>
+
+    <%= image_tag @dogs.image %>
+    <div class="cards row">
+      <% @locations.each do |l| %>
+      <div class="card col-xs-4">
+        <%= image_tag l.image %>
+        <h2><%= l.city %></h2>
+        <p><%= l.description %></p>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>

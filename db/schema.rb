@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20160725215513) do
     t.string   "city"
     t.integer  "tag_id"
     t.string   "description"
+    t.integer  "dog_id"
+    t.string   "image"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
