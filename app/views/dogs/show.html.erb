@@ -1,24 +1,27 @@
 <div class="header">
   <div class="container">
-        <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
-        <h1>Dogs for Adoption</h1>
+        <img id="logo"src="http://logofury.com/wp-content/uploads/2002/320.jpg" width="80">
+        <h1>Dog for Adoption</h1>
   </div>
 </div>
 
 <div class="dog">
   <div class="container">
     <%= image_tag @dogs.image %>
-     <h2><%= @dogs.breed %></h2>
-     <p><%= @dogs.age %></p>
-     <p><%= @dogs.sex %></p>
+
+      <h2><%= @dogs.breed %></h2>
+      <p><%= @dogs.age %></p>
+      <p><%= @dogs.sex %></p>
 
     <div class="cards row">
       <div class="card col-xs-4">
+      <%= link_to "Home", home_path %>
+      <%= link_to "Edit", edit_dog_path %>
+      <%= link_to 'Delete', delete_path, :method => :delete %>
+
       </div>
     </div>
   </div>
 </div>
 
-<%= link_to "Home", home_path %>
-<%= link_to "Edit", edit_dog_path %>
-<%= link_to 'Delete', delete_path, :method => :delete %>
+

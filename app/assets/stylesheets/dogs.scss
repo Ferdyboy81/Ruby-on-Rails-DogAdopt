@@ -1,3 +1,22 @@
 // Place all the styles related to the Dogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.header{
+background: gray;
+text-align: center;
+height: 200px;
+
+}
+
+.dogs img,
+.dog img {
+  display: block;
+  width: 100% \9;
+  height: auto;
+  max-width: 100%;
+}
+
+#logo {
+  border: 4px black solid;
+  border-radius: 10px;
+}

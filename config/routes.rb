@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
 
 # LOCATION ROUTES
-  get 'locations/index'
+  get 'locations/index' => 'location#index'
   get 'locations/new'
   post 'locations/create'
   get '/locations/:id' => 'locations#show', as: :location
