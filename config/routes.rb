@@ -3,15 +3,13 @@ Rails.application.routes.draw do
 
 # DOG ROUTES
   root to: "dogs#index", as: :home
-  get 'dogs/index' => 'dogs#index'
+  get 'dogs/index' => 'dogs#index', as: :index_dog
   get 'dogs/new' => 'dogs#new', as: :new_dog
-  post 'dogs/create' => 'dogs#create'
+  post 'dogs/index' => 'dogs#create', as: :create_dog
   get 'dogs/:id' => 'dogs#show', as: :dog
   get 'dogs/:id/edit' => 'dogs#edit', as: :edit_dog
-
-  # patch 'dogs/:id/update'
-
-  # delete 'dogs/:id/destroy'
+  patch 'dogs/:id' => 'dogs#update'
+  delete 'dogs/:id' => 'dogs#destroy', as: :delete
 
 
 # LOCATION ROUTES
