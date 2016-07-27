@@ -8,8 +8,9 @@ Rails.application.routes.draw do
   post 'dogs/index' => 'dogs#create', as: :create_dog
   get 'dogs/:id' => 'dogs#show', as: :dog
   get 'dogs/:id/edit' => 'dogs#edit', as: :edit_dog
-  patch 'dogs/:id' => 'dogs#update'
+  patch 'dogs/:id' => 'dogs#update', as: :save_dog
   delete 'dogs/:id' => 'dogs#destroy', as: :delete
+
 
 
 # LOCATION ROUTES
@@ -28,7 +29,6 @@ Rails.application.routes.draw do
 
 # USER ROUTES
   # get 'users/index'
-  # get 'users/new'
   # post 'users/create'
   # get 'users/show'
   # get 'users/edit'

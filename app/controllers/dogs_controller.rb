@@ -30,8 +30,8 @@ class DogsController < ApplicationController
 
   def update
     @dog = Dog.find(params[:id])
-    if @dog.update(dogs_params)
-      redirect_to @dog, notice: "Your dog was successfully updated."
+    if @dog.update_attributes(dogs_params)
+      redirect_to dog_path, notice: "Your dog was successfully updated."
     else
       render :edit
     end

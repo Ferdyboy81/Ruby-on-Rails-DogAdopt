@@ -3,7 +3,8 @@
 <h1>Edit your Dog profile</h1>
 
 
-<text-<%= form_for @dog do |f| %>
+<%= form_for @dog, url: save_dog_path do |f| %>
+
 
   <%= f.label :breed %>
   <%= f.text_field :breed %><br />
@@ -19,8 +20,8 @@
 
 
   <%= f.submit "Save changes", class: "btn btn-primary" %>
-
+  <button type=""><%= link_to 'Back', dog_path %></button>
+  <button type=""><%= link_to 'Delete', delete_path, :method => :delete %></button>
 <% end %>
 
- <button type=""><%= link_to 'Back', dog_path %></button>
- <button type=""><%= link_to 'Delete', delete_path, :method => :delete %></button>
+

@@ -8,10 +8,19 @@
 
   }
 
+// top navi bar
+.navbar {
+
+    font-size: 12px;
+    background-color: gray;
+    font-weight: bold;
+  }
+
+
 .dogs img,
 .dog img {
   display: block;
-  width: 100% \9;
+  width: 100%;
   height: auto;
   max-width: 100%;
 }
