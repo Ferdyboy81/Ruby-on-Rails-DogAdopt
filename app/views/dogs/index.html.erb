@@ -1,9 +1,13 @@
+
+
+
 <div class="header">
   <div class="container">
 
 
   <h1 class="text-center">Pup-Adopt</h1>
     <img id="logo" src="http://logofury.com/wp-content/uploads/2002/320.jpg" width="80">
+        <%= link_to "Add a Pup", new_dog_path, class: "btn btn-danger" %>
     <p>"Your future pet is waiting for you"</p>
   </div>
 </div>
@@ -22,7 +26,7 @@
         <button><%= link_to "Adopt Me", dog_path(d.id) %></button>
       </div>
       <% end %>
-      <button><%= link_to "Add a Pup", new_dog_path %></button>
+
     </div>
   </div>
 </div>
