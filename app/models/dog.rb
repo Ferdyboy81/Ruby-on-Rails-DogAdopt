@@ -6,7 +6,7 @@ class Dog < ActiveRecord::Base
 
   where("breed ILIKE ?", "%#{search}%")
   where("age ILIKE ?", "%#{search}%")
-  where("sex ILIKE ?", "%#{search}%")
+  # where("sex ILIKE ?", "%#{search}%")
 
   end
 

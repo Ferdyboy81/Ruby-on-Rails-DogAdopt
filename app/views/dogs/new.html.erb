@@ -1,3 +1,7 @@
+
+
+
+
 <h1 id="register">Register new dog for adoption</h1>
 
 <div class="info">
@@ -8,17 +12,14 @@
   <%= f.label :age %>
   <%= f.text_field :age %><br />
 
-  <%= f.label :sex %>
+  <%= f.label :sex, "Sex" %>
   <%= f.text_field :sex %><br />
 
   <%= f.label :image %>
   <%= f.text_field :image %><br />
-
-</div>
-
-
   <%= f.submit "submit" %>
   <%= link_to 'Back', index_dog_path %>
 
+</div>
 
 <% end %>

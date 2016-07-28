@@ -1,7 +1,9 @@
 body {
  background-color:#eee;
+/*background:
+url("https://img0.etsystatic.com/016/0/6220571/il_fullxfull.426855582_be0l.jpg");
+}*/
 }
-
 .header{
   background: rgba(176, 173, 156, 1);
   text-align: center;
@@ -30,30 +32,60 @@ body {
   margin-top: 20px;
 }
 
+img {
+    vertical-align: middle;
+    height: 50px;
+    width: 59px;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+
 .edit_dog {
   text-align: center;
+  background: pink;
+  margin-top: 5px;
 }
 
 #logo {
   border: 4px black solid;
   border-radius: 10px;
 }
-h1 {
-  text-align: center;
+h1, h2 {
+
+  font-family: 'Londrina Shadow', cursive;
+  color: black;
+  font-weight: 600;
 }
 
-h2 {
-  text-align: ;
-}
 
 h3 {
   text-align: center;
-  background-color: gray;
+  background-color: ;
+  font-family: 'Londrina Shadow', cursive;
+  font-weight: 900;
+  font-size: 3em;
+
+}
+
+p {
+font-weight: 900;
+
+}
+
+.page-header {
+  text-align: left;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .info {
   text-align: center;
   font-size: 1.5em;
+  margin-top: 20px;
+
 }
 
 .field {
@@ -67,6 +99,38 @@ h3 {
 .footer {
   margin-top: 10px;
   text-align: center;
+  background: rgba(176, 173, 156, 1);
+}
+
+.name {
+  color: blue;
+}
+
+.white-panel {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.devise, .devise2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: -1px 12px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #f4e890;
+  background-color: #f4e890;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
 }
 
 

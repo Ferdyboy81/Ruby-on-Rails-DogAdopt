@@ -1,5 +1,5 @@
 
-<div class="edit_dog">
+
 <h1>Edit your Dog profile</h1>
 
 
@@ -19,9 +19,11 @@
   <%= f.text_field :image %><br />
 
 
+<div>
   <%= f.submit "Save changes", class: "btn btn-primary" %>
   <button type=""><%= link_to 'Back', dog_path %></button>
   <button type=""><%= link_to 'Delete', delete_path, :method => :delete %></button>
-<% end %>
 </div>
+<% end %>
+
 

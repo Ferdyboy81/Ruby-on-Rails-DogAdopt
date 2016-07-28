@@ -1,6 +1,5 @@
 <div class="header">
   <div class="container">
-        <img id="logo" src="http://logofury.com/wp-content/uploads/2002/320.jpg" width="80">
         <h1>Take me home</h1>
   </div>
 </div>
@@ -8,10 +7,11 @@
 <div class="dog">
   <div class="container">
     <%= image_tag @dogs.image %>
-
+<div class="page-header">
       <h2><%= @dogs.breed %></h2>
       <p><%= @dogs.age %></p>
       <p><%= @dogs.sex %></p>
+</div>
 
     <div class="cards row">
       <div class="card col-xs-4">

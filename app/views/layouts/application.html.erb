@@ -10,6 +10,7 @@
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>>
 </head>
 <body>
 
@@ -23,6 +24,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="http://logofury.com/wp-content/uploads/2002/320.jpg">Pup-Adopt</a>
+      <img alt="Brand" src="http://logofury.com/wp-content/uploads/2002/320.jpg">
     </div>
 
 <!-- nav links, forms, and content for toggling -->
@@ -38,8 +40,8 @@
       Adoption Info<span class="caret"></span></a>
 
             <ul class="dropdown-menu">
-              <li><a href="http://www.humanesociety.org/issues/adopt/tips/top_reasons_adopt.html?referrer=https://www.google.com/">Why Adopt a Dog</a></li>
-              <li><a href="#">Locations</a></li>
+              <li><a href="http://www.peta.org/living/companion-animals/8-reasons-adopt-buy-dogs/">Why Adopt a Dog?</a></li>
+              <li><a href="<%= location_path %>">Locations</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="<%= new_dog_path %>">Add a Dog for Adoption</a></li>
             </ul>
@@ -54,7 +56,7 @@
 
         <%= form_tag index_dog_path, :method => 'get', class:"navbar-form navbar-left" do %>
           <div class="form-group">
-          <%= text_field_tag :search, params[:search], placeholder: "Search Dog", class:"form-control" %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search Dogs..", class:"form-control" %>
           </div>
           <%= submit_tag "submit", :name => nil, class:"btn btn-default" %>
           <% end %>

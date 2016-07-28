@@ -1,4 +1,4 @@
-<h3>Your future pet is waiting for you</h3>
+<h3>Your future pet is waiting for you ... </h3>
 <div class="dogs">
   <div class="container">
     <div class="cards row">
@@ -8,9 +8,8 @@
         <h2><%= d.breed %></h2>
         <p><%= d.age %></p>
         <p><%= d.sex %></p>
-        <button><%= link_to "Adopt Me", dog_path(d.id) %></button>
+        <button class="button"><%= link_to "Adopt Me", dog_path(d.id) %></button>
       </div>
-
       <% end %>
     </div>
   </div>
@@ -18,7 +17,7 @@
 
 
 <footer class="footer">
-  <p>written and coded by Ftan</p>
+  <p>written and coded by</span><span class="name"> FTan </span>&copy; 2016</p>
 </footer>
 
 
