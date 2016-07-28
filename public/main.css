@@ -1,8 +1,8 @@
 body {
  background-color:#eee;
-/*background:
-url("https://img0.etsystatic.com/016/0/6220571/il_fullxfull.426855582_be0l.jpg");
-}*/
+ background: url("http://www.phayaoshop.com/ioffer/pet-shop-background-middle.gif");
+ background-size: 100%;
+ align-content; center;
 }
 .header{
   background: rgba(176, 173, 156, 1);
@@ -30,6 +30,7 @@ url("https://img0.etsystatic.com/016/0/6220571/il_fullxfull.426855582_be0l.jpg")
   border-radius: 20px;
   border: 4px black solid;
   margin-top: 20px;
+
 }
 
 img {
@@ -60,7 +61,6 @@ h1, h2 {
 
 h3 {
   text-align: center;
-  background-color: ;
   font-family: 'Londrina Shadow', cursive;
   font-weight: 900;
   font-size: 3em;
@@ -124,13 +124,28 @@ font-weight: 900;
   font-size: 17px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   color: #f4e890;
-  background-color: #f4e890;
+  background-color: #fcba03;
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px #999;
 }
 
+.button:active {
+  background-color: #b28b1f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
+.sign-up {
+  text-align: center;
+  text-decoration: yellow;
+}
+
+.log_in {
+  text-align: center;
+}
+
+.dog {
+  align-content: center;
+}
