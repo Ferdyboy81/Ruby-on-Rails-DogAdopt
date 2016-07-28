@@ -1,6 +1,6 @@
-<h1>New Dogs Available for Adoption</h1>
+<h1 id="register">Register new dog for adoption</h1>
 
-
+<div class="info">
 <%= form_for(@dog, url: '/dogs/index') do |f| %>
   <%= f.label :breed %>
   <%= f.text_field :breed %><br />
@@ -14,7 +14,11 @@
   <%= f.label :image %>
   <%= f.text_field :image %><br />
 
-  <%= f.submit "submit" %>
-<% end %>
+</div>
 
- <%= link_to 'Back', index_dog_path %>
+
+  <%= f.submit "submit" %>
+  <%= link_to 'Back', index_dog_path %>
+
+
+<% end %>

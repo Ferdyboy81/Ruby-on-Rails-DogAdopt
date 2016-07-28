@@ -1,0 +1,72 @@
+body {
+ background-color:#eee;
+}
+
+.header{
+  background: rgba(176, 173, 156, 1);
+  text-align: center;
+  }
+
+#logo {
+  float: left;
+}
+
+.navbar {
+
+    font-size: 12px;
+    background-color: ;
+    font-weight: bold;
+  }
+
+
+.dogs img,
+.dog img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 4px black solid;
+  margin-top: 20px;
+}
+
+.edit_dog {
+  text-align: center;
+}
+
+#logo {
+  border: 4px black solid;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: ;
+}
+
+h3 {
+  text-align: center;
+  background-color: gray;
+}
+
+.info {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.field {
+  text-align: center;
+}
+
+#register {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+

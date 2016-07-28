@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
       if @user.save
-          flash[:notice] = "You have su"
+          flash[:notice] = "You have successfully signed up!"
       end
   end
 
