@@ -2,7 +2,7 @@ body {
  background-color:#eee;
  background: url("http://www.phayaoshop.com/ioffer/pet-shop-background-middle.gif");
  background-size: 100%;
- align-content; center;
+
 }
 .header{
   background: rgba(176, 173, 156, 1);
@@ -30,6 +30,9 @@ body {
   border-radius: 20px;
   border: 4px black solid;
   margin-top: 20px;
+  margin-left: 25px;
+
+
 
 }
 
@@ -56,6 +59,7 @@ h1, h2 {
   font-family: 'Londrina Shadow', cursive;
   color: black;
   font-weight: 600;
+  text-align: center;
 }
 
 
@@ -73,7 +77,7 @@ font-weight: 900;
 }
 
 .page-header {
-  text-align: left;
+  text-align: center;
 }
 
 .actions {
@@ -124,12 +128,17 @@ font-weight: 900;
   font-size: 17px;
   cursor: pointer;
   text-align: center;
+  text-decoration: none;
+  outline: none;
   color: #f4e890;
   background-color: #fcba03;
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px #999;
 }
+
+
+.button:hover {background-color: #fcba03}
 
 .button:active {
   background-color: #b28b1f;
@@ -144,8 +153,16 @@ font-weight: 900;
 
 .log_in {
   text-align: center;
+
 }
 
-.dog {
-  align-content: center;
+.dog-image {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dogs {
+  justify-content: center;
 }
