@@ -78,6 +78,7 @@ font-weight: 900;
 
 .page-header {
   text-align: center;
+
 }
 
 .actions {
@@ -101,7 +102,7 @@ font-weight: 900;
 }
 
 .footer {
-  margin-top: 10px;
+  margin-top: 50px;
   text-align: center;
   background: rgba(176, 173, 156, 1);
 }
@@ -165,4 +166,17 @@ font-weight: 900;
 
 .dogs {
   justify-content: center;
+}
+
+.card.col-xs-4 {
+  text-align: center;
+
+}
+
+a {
+padding: 5px;
+}
+
+.container {
+  text-align: center;
 }

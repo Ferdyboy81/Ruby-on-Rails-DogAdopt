@@ -1,10 +1,17 @@
-<h1>Locations</h1>
+<h1>Locations & Contact Info.</h1>
 
-<p></p>
-<div class="locations">
-  <div class="container">
-    <div class="cards row">
+
+
+<div class="container text-center">
 <% @locations.each do |l| %>
-<div class="card col-xs-4">
-<%= l.text_field :city %>
+  <%= link_to l.city, location_show_path(l.id) %> <br>
 <% end %>
+</div>
+
+
+
+
+<div class="text-center">
+<p>Please send e-mail to: <span class="name">ferdyboy@gmail.com </span>for further info.</p>
+</div>
+

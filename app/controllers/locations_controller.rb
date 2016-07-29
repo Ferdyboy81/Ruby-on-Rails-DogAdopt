@@ -6,6 +6,7 @@ class LocationsController < ApplicationController
       else
         @locations = Location.all
       end
+
   end
 
   def new
@@ -13,9 +14,12 @@ class LocationsController < ApplicationController
   end
 
   def create
+
   end
 
   def show
+    @location = Location.find(params[:id])
+    @dogs = Dog.where(location_id: @location_id)
   end
 
   def edit

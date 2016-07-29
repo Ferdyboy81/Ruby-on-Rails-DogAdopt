@@ -14,9 +14,9 @@ Rails.application.routes.draw do
 
 
 # LOCATION ROUTES
-  get 'locations/index' => 'locations#index', as: :location
+  get 'locations/' => 'locations#index', as: :locations
   get 'locations/new' => 'locations#new', as: :new_locations
-  post 'locations/create' => 'location#create'
+  post 'locations/create' => 'location#create', as: :create_location
   get '/locations/:id' => 'locations#show', as: :location_show
 
   # get 'locations/:id/edit'

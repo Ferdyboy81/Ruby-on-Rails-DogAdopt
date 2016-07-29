@@ -11,11 +11,15 @@
       <h2><%= @dogs.breed %></h2>
       <p><%= @dogs.age %></p>
       <p><%= @dogs.sex %></p>
+
       <%= link_to "Home", home_path %>
+      <%= link_to "Contact Info", locations_path %>
       <!-- limits user and give admin rights -->
       <% if user_signed_in? and current_user.admin %>
         <%= link_to "Edit", edit_dog_path %>
         <%= link_to 'Delete', delete_path, :method => :delete %>
+
+
       <% end %>
     </div>
   </div>
